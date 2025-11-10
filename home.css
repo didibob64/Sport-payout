@@ -1,0 +1,148 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background:/*#1e1e1e*/#ECEEFF00;
+  color: white;
+}
+
+.navbar {
+  background-color: #333;
+  color:#fff;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  justify-content: space-between; /* Distribute space evenly */
+  align-items: center; /* Vertically center items */
+ padding: 10px 10px; /* Add some padding for spacing */
+}
+
+.navbar-brand {
+  font-size: 23px; /* Adjust as needed */
+  margin-left: auto; /* Push to the left */
+  margin-right: auto;
+  font-family: 'Times New Roman';
+}
+
+.menu-container {
+  position: relative;
+  display: inline-block; /* Allows width and height to be auto-calculated */
+}
+
+.menu-button {
+  background-color: #ECEEFF00;
+  color: #fff;
+  border: none;
+  padding: 10px 10px ;
+  cursor: pointer;
+  display: flex;  /* Use flexbox to align icon and text */
+  align-items: center; /* Vertically center items within button */
+  gap: 3px;       /* Space between icon and text */
+}
+
+.menu-dropdown {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+
+}
+
+.menu-dropdown a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.menu-dropdown a:hover {
+  background-color: #ddd;
+}
+
+.menu-container:hover .menu-dropdown {
+  display: block;
+}
+
+.about-icon {
+  font-size: 30px; /* Adjust icon size */
+  padding-right: 7%;
+  cursor: pointer;
+  margin-left: auto; /* Push to right */
+  color: #fff;
+  
+text-decoration: none;
+}
+
+/* Icon Styling (You'll need to replace the content with actual icon codes or image paths) */
+.icon {
+    font-size: 16px;
+    margin-right: 4px;
+}
+.main{
+  background-image: url('IMG.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 90vh;
+  margin-top: 15px;
+  
+}
+.content{
+  margin: 15px;
+  padding-top: 260px;
+  display: flex;
+}
+.con{
+  color: #fff;
+  
+}
+.cc{
+  background: url('I.jpg');
+  border-radius: 20px;
+  height: 120px;
+  text-align: center;
+  padding: 12px 16px;
+  
+}
+.cc:hover{
+  opacity: 3;
+}
+.cc a{
+  text-decoration: none;
+  border: 2px solid #fff;
+  color:#fff;
+  border-radius: 20px;
+  padding: 10px 12px;
+  text-align: center;
+  margin-bottom: 30%;
+}
+.testimonials {
+    padding: 2em;
+}
+
+.image-slider {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-slider img {
+  justify-content: center;
+    width: 100%;
+    height: 90px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.image-slider img.active {
+    opacity: 1;
+}

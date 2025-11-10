@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style type="text/css" media="all">
+        
+.playfair-display {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+    </style>
+    <header>
+        <h1 class="playfair-display">Sport payout</h1>
+        <nav>
+            <a href="profile.html">Profile</a>
+            <a href="w/d.html">Withdrawal/Deposit</a>
+            <button id="logoutBtn">Logout</button>
+        </nav>
+    </header>
+
+    <main>
+        <div id="userInfo">
+            <h2>User Information</h2>
+            <p><strong>ID:</strong> <span id="userIdDisplay"></span></p>
+            <p><strong>Full Name:</strong> <span id="fullNameDisplay"></span></p>
+            <p><strong>Email:</strong> <span id="emailDisplay"></span></p>
+            <p><strong>Balance:</strong> ₦<span id="balanceDisplay"></span></p>
+            <p ><strong>Referral Link:</strong> <span id="referralLinkDisplay" style="color:red;"></span></p>
+
+            <h2>P2P Transfer</h2>
+            <label for="transferUserId">User ID to Transfer To:</label>
+            <input type="text" id="transferUserId" placeholder="Enter User ID">
+            <label for="transferAmount">Amount to Transfer:</label>
+            <input type="number" id="transferAmount" placeholder="Enter Amount">
+            <button id="transferBtn">Transfer Funds</button>
+            <p id="transferMessage"></p>
+        </div>
+    </main>
+
+    <footer>
+        <p style=" font-family: Georgia, 'Times New Roman', Times, serif;">&copy; Sport payout</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            displayUserInfo(); // Call displayUserInfo here
+        });
+    </script>
+</body>
+</html>
