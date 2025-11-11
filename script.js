@@ -1,4 +1,4 @@
-const initialBalance = 000050; // Initial 6-figure balance
+const initialBalance = 000060; // Initial 6-figure balance
 
 function generateUserId() {
   return Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
@@ -189,7 +189,7 @@ function transferFunds() {
   localStorage.setItem(senderEmail, JSON.stringify(senderData));
   localStorage.setItem(recipientEmail, JSON.stringify(recipientData));
   
-  transferMessageElement.textContent = `Successfully transferred ₦${amount.toLocaleString()} to User ID ${recipientId}.`;
+  transferMessageElement.textContent = `Successfully transferred $${amount.toLocaleString()} to User ID ${recipientId}.`;
   displayUserInfo(); // Update sender's balance on the home page
 }
 
