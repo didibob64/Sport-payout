@@ -5,7 +5,7 @@ function generateUserId() {
 }
 
 function generateReferralLink(userId) {
-  return `https://didibob64.github.io/Sport-payout/#/referral?id=${userId}`; // Replace with your actual domain
+  return `https://didibob64.github.io/Sport-payout/#/referral?id=${userId}`; // Replace with your actual domain link
 }
 
 function signup() {
