@@ -1,7 +1,7 @@
 const initialBalance = 000050; // Initial 6-figure balance
 
 function generateUserId() {
-  return Math.random().toString(36).substring(2, 16) + Math.random().toString(36).substring(2, 16);
+  return Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
 }
 
 function generateReferralLink(userId) {
