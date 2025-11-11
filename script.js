@@ -1,4 +1,4 @@
-const initialBalance = 000000; // Initial 6-figure balance
+const initialBalance = 000050; // Initial 6-figure balance
 
 function generateUserId() {
   return Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
